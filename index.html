@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Live Talk Show</title>
+    <link rel="stylesheet" href="styles.css">
+    <style >
+        /* Reset some basic elements */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+header {
+    background-color: #444;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.stream-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+iframe {
+    width: 100%;
+    height: 480px;
+    border: none;
+}
+
+.stream-info {
+    padding: 1rem;
+}
+
+.stream-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stream-info p {
+    margin-bottom: 0;
+}
+
+.call-section, .advertising-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.call-section h2, .advertising-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.phone-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.advertising-section p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.advertising-section p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #444;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Live Talk Show Platform</h1>
+    </header>
+    <main>
+        <div class="stream-container">
+            <iframe src="https://viewer.millicast.com?streamId=V86J4s/Nigerian%20Radio%20Station" allowfullscreen></iframe>
+            <div class="stream-info">
+                <h2>All About It: Live Talk Show</h2>
+                <p>Welcome to our live talk show! Join us as we discuss a variety of topics, from relationships to current events. Our hosts are here to provide insightful discussions and answer your questions.</p>
+            </div>
+        </div>
+        <div class="call-section">
+            <h2>Call Us Live!</h2>
+            <p>Have a question or want to share your thoughts? Call us during the live show at:</p>
+            <p class="phone-number">+234 811 678 8630</p>
+        </div>
+        <div class="advertising-section">
+            <h2>Advertising Space</h2>
+            <p>Promote your business or product on our live show! Contact us for advertising opportunities:</p>
+            <p>Email: <a href="mailto:danielclement003@gmail.com">danielclement003@gmail.com</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Live Talk Show Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
